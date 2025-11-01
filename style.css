@@ -557,9 +557,7 @@ nav ul li.active a {
 }
 
 .footer-links {
-  margin-left: 333px;
-  list-style: none;
-  padding: 0;
+
 }
 
 .footer-links li {
@@ -576,7 +574,7 @@ nav ul li.active a {
   color: #fff;
 }
 .footer-bottom span {
-  color: black;
+  color: WHITE;
   font-weight: bold;
 }
 
@@ -621,14 +619,14 @@ nav ul li.active a {
   }
 
   nav ul {
-    flex-direction: column;
+
     width: 100%;
-    gap: 15px;
+    gap: 8px;
     align-items: flex-start;
   }
 
   nav ul li a {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   header {
@@ -637,7 +635,6 @@ nav ul li.active a {
 
   /* Hero */
   .icons {
-    flex-direction: column;
     margin-top: 40px;
   }
 
@@ -646,7 +643,7 @@ nav ul li.active a {
   }
 
   .info-box {
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
     text-align: center;
   }
@@ -682,16 +679,17 @@ nav ul li.active a {
 
   /* Projects */
   .projects {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .project-item {
-    width: 90%;
+    width: 40%;
   }
 
   /* Blogs */
   .container-blog {
     flex-direction: column;
+    width: 70%;
   }
 
   .blogs {
@@ -705,11 +703,14 @@ nav ul li.active a {
 
   .testimonial {
     width: 90%;
-    margin: 30px auto;
   }
 
   .testimonial-section h4 {
     bottom: 20px;
+  }
+  .testimonial-section h3 {
+    margin-top: 90px;
+    margin-left: 40px;
   }
 
   /* Clients */
@@ -730,7 +731,7 @@ nav ul li.active a {
   }
 
   .footer-column {
-    flex: 1 1 100%;
+    flex: 100%;
     margin-bottom: 20px;
   }
 
@@ -740,7 +741,7 @@ nav ul li.active a {
 }
 
 /* 📱 Small Phones (max-width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   body {
     font-size: 14px;
   }
@@ -776,12 +777,16 @@ nav ul li.active a {
   .blog-item {
     width: 100%;
   }
-
+.testimonial {
+  width: 90%;
+  height: 20%;
+}
   .client-card {
     padding: 20px;
   }
 
   .footer {
+    flex-direction: column;
     font-size: 12px;
   }
 
