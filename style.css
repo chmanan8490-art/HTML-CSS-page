@@ -546,6 +546,8 @@ nav ul li.active a {
 }
 
 .footer-bottom {
+  display: flex;
+  justify-content: space-around;
   border-top: 1px solid #333;
   background: #1a1a1a;
   text-align: center;
@@ -555,9 +557,9 @@ nav ul li.active a {
 }
 
 .footer-links {
+  margin-left: 333px;
   list-style: none;
   padding: 0;
-  margin-top: 10px;
 }
 
 .footer-links li {
@@ -577,3 +579,227 @@ nav ul li.active a {
   color: black;
   font-weight: bold;
 }
+
+/* ===========================
+   📱 RESPONSIVE DESIGN START
+   =========================== */
+
+/* 💻 Tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 25px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-box {
+    width: 50%;
+  }
+
+  .container-quote {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .quote-btn {
+    margin-top: 15px;
+  }
+}
+
+/* 📱 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Header */
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  /* Hero */
+  .icons {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .icons img {
+    width: 100px;
+  }
+
+  .info-box {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .slider-controls {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  /* About */
+  .about-section h2 {
+    font-size: 18px;
+  }
+
+  .about-section p {
+    font-size: 13px;
+  }
+
+  /* Services */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 60%;
+  }
+
+  /* Projects */
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-item {
+    width: 90%;
+  }
+
+  /* Blogs */
+  .container-blog {
+    flex-direction: column;
+  }
+
+  .blogs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-item {
+    width: 90%;
+  }
+
+  .testimonial {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .testimonial-section h4 {
+    bottom: 20px;
+  }
+
+  /* Clients */
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .client-card {
+    padding: 30px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .flickr-images {
+    justify-content: center;
+  }
+}
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 25px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .info-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .icons img {
+    width: 80px;
+  }
+
+  .plus {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .project-item,
+  .blog-item {
+    width: 100%;
+  }
+
+  .client-card {
+    padding: 20px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .quote-text {
+    font-size: 16px;
+  }
+
+  .quote-btn {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+/* ===========================
+   📱 RESPONSIVE DESIGN END
+   =========================== */
