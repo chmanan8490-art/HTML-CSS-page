@@ -9,6 +9,13 @@ body {
   color: #333;
   background-color: #fff;
 }
+    .main-container {
+  max-width: 1200px;  
+  margin: 0 auto;      
+  padding: 0 40px;    
+    overflow-x: hidden; 
+
+}
 
 header {
   border-bottom: 5px solid #eee;
@@ -58,6 +65,7 @@ nav ul li a {
   text-decoration: none;
   color: #444;
   font-weight: bold;
+  margin: 0 5px;
   font-size: 14px;
 }
 
@@ -218,7 +226,7 @@ nav ul li.active a {
 
 }
 .container {
-    width: 96%;
+    width: 100%;
     max-width: 1215px;
     margin: auto;
     display: flex;
@@ -244,11 +252,11 @@ nav ul li.active a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 16px;
 }
 
 .project-item {
-  width: 280px;
+  width: 268px;
   background: #ffff;
   padding: 10px;
   border: 1px solid #e0e0e0;
@@ -281,8 +289,7 @@ nav ul li.active a {
   margin-bottom: 41px;
   background-color: #ffff;     
   text-align: center;
-  border-top: 1px solid #e3d7d7;
-  border-bottom: 1px solid #e3d7d7;
+  border: 1px solid #e3d7d7;
 }
 
 .container-quote {
@@ -295,7 +302,8 @@ nav ul li.active a {
 }
 
 .quote-text {
-  font-size: 20px;
+  margin-left: 15px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 14px;
@@ -304,7 +312,7 @@ nav ul li.active a {
 
 .quote-text small {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   color: #777;
   margin-top: 5px;
 }
@@ -314,8 +322,9 @@ nav ul li.active a {
   color: #fff;
   text-decoration: none;
   padding: 12px 25px;
-  border-radius: 3px;
+  border-radius: 13px;
   font-weight: bold;
+  margin-right: 25px;
   transition: background 0.3s ease;
   text-transform: uppercase;
 }
@@ -349,11 +358,12 @@ nav ul li.active a {
   display: flex;
   justify-content: center;
   gap: 22px;
+  width: 72%;
 
 }
 
 .blog-item {
-  width: 280px;
+  width: 277px;
   background: #ffff;
   padding: 10px;
   border-bottom: 1px solid #e0e0e0;
@@ -398,12 +408,13 @@ nav ul li.active a {
   top: -37px;
   z-index: 2;
   font-size: 25px;
+  
 }
 
 
 
 .testimonial {
-  width: 335px;
+  max-width: 246px;
   background: #fff;
   padding: 20px;
   margin-bottom: 93px;
@@ -415,7 +426,7 @@ nav ul li.active a {
 
 .testimonial p {
   color: #666;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.9;
   margin-bottom: 7px;
 }
@@ -426,10 +437,7 @@ nav ul li.active a {
 }
 .testimonial-section span {
       color: #999;
-
 }
-
-
 .testimonial::after {
   content: '';
   position: absolute;
@@ -461,7 +469,7 @@ nav ul li.active a {
 .client-card {
   background: #fff;
   border: 1px solid rgba(0,0,0,0.06);
-  padding: 57px;
+  padding: 51px;
   height: 84px; 
   display: flex;
   align-items: center;
@@ -475,7 +483,7 @@ nav ul li.active a {
 }
 
 .client-card img {
-  max-height: 100px; 
+  max-height: 97px; 
  
 }
 
@@ -521,11 +529,16 @@ nav ul li.active a {
 .footer-column .highlight {
   color: #e74c3c;
 }
-
-.social-icons a {
+.latest-tweets a {
   color: #ccc;
+  text-decoration: none;
+}
+.social-icons a {
+  background-color: #b4b3b3;
+  background-attachment: fixed;
+  color: #f7e8e8;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 19px;
   text-decoration: none;
 }
 
@@ -555,11 +568,6 @@ nav ul li.active a {
   font-size: 13px;
   color: #777;
 }
-
-.footer-links {
-
-}
-
 .footer-links li {
   display: inline-block;
   margin: 0 10px;
@@ -577,234 +585,192 @@ nav ul li.active a {
   color: WHITE;
   font-weight: bold;
 }
-
-/* ===========================
-   📱 RESPONSIVE DESIGN START
-   =========================== */
-
-/* 💻 Tablets and smaller laptops (max-width: 1024px) */
-@media (max-width: 1024px) {
-  nav ul {
+.hambler i {
+    display: none;
+    font-size: 28px;
+    color: #333;
+    float: right;
+    margin-top: -40px;
+  }
+@media (max-width: 900px) {
+  nav ul{
     gap: 25px;
   }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+}
+  @media (max-width: 350px) {
+    .info-box {
+      width: 100%;
+    }
+      .blogs {
+    width: 100%;
+    align-items: center;    
   }
+    .icons img {
+      width: 100px;
+    }
+    .cards {
+    display: block;
+    }
+    .icon {
+      margin-top: 15px;
+    }
+    .blogs {
+      display: block;
 
-  .clients-grid {
-    grid-template-columns: repeat(3, 1fr);
+    }
+.clients-grid {
+    gap: 15px;
+    width: 92%;
+  
+}
+.client-card {
+    display: flex;
   }
-
-  .info-box {
-    width: 50%;
-  }
-
-  .container-quote {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .quote-btn {
-    margin-top: 15px;
+  .client-card img {
+    max-height: 58px;
+}
+  
+  .project-item img {
+    height: 86px;
   }
 }
 
-/* 📱 Tablets (max-width: 768px) */
+
 @media (max-width: 768px) {
-  /* Header */
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
+  body {
+    font-size: 15px;
   }
 
-  nav ul {
-
-    width: 100%;
-    gap: 8px;
-    align-items: flex-start;
-  }
-
-  nav ul li a {
-    font-size: 12px;
+  .main-container {
+    padding: 0 15px;
   }
 
   header {
     padding: 15px 0;
   }
 
-  /* Hero */
+  nav ul {
+    display: none; 
+  }
+.hambler i {
+    display: block;
+  }
+ 
+
+
   .icons {
     margin-top: 40px;
   }
 
-  .icons img {
-    width: 100px;
-  }
-
   .info-box {
-    width: 60%;
-    margin: 20px auto;
+    width: 100%;
     text-align: center;
+    margin: 20px auto;
   }
 
   .slider-controls {
-    right: 10px;
-    bottom: 10px;
+    position: static;
+    margin-top: 10px;
   }
 
-  /* About */
-  .about-section h2 {
-    font-size: 18px;
+  .about-section {
+    padding: 30px 15px;
   }
 
-  .about-section p {
-    font-size: 13px;
-  }
-
-  /* Services */
   .cards {
-    grid-template-columns: 1fr;
-    gap: 25px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
   }
 
   .card {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .btn {
     width: 60%;
   }
 
-  /* Projects */
   .projects {
-    flex-direction: row;
+    align-items: center;
   }
 
   .project-item {
     width: 40%;
   }
 
-  /* Blogs */
-  .container-blog {
+  .container-quote {
     flex-direction: column;
-    width: 70%;
-  }
-
-  .blogs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .blog-item {
-    width: 90%;
-  }
-
-  .testimonial {
-    width: 90%;
-  }
-
-  .testimonial-section h4 {
-    bottom: 20px;
-  }
-  .testimonial-section h3 {
-    margin-top: 90px;
-    margin-left: 40px;
-  }
-
-  /* Clients */
-  .clients-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .client-card {
-    padding: 30px;
-  }
-
-  /* Footer */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .footer-column {
-    flex: 100%;
+  .quote-text {
+    margin: 15px 0;
+  }
+
+  .quote-btn {
+    margin: 15px 0 25px 0;
+  }
+
+  .container-blog {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogs {
+    width: 100%;
+    align-items: center;
+  }
+
+  .blog-item {
+    width: 90%;
+  }
+
+  .testimonial-section {
+    padding: 30px 15px;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .testimonial-section h3 {
+    position: static;
     margin-bottom: 20px;
   }
-
-  .flickr-images {
-    justify-content: center;
-  }
-}
-
-/* 📱 Small Phones (max-width: 480px) */
-@media (max-width: 320px) {
-  body {
-    font-size: 14px;
+  .testimonial-section h4 {
+   
+    right: -29px;
   }
 
-  .logo img {
-    width: 25px;
-  }
-
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .info-box {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .icons img {
-    width: 80px;
-  }
-
-  .plus {
-    font-size: 24px;
-  }
-
-  .btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .project-item,
-  .blog-item {
-    width: 100%;
-  }
-.testimonial {
-  width: 90%;
-  height: 20%;
-}
   .client-card {
-    padding: 20px;
+    padding: 25px;
+    height: auto;
   }
 
-  .footer {
+  .footer-container {
     flex-direction: column;
-    font-size: 12px;
+    align-items: flex-start;
+    padding: 40px 15px;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 
   .footer-links li {
     display: block;
     margin: 5px 0;
   }
-
-  .quote-text {
-    font-size: 16px;
-  }
-
-  .quote-btn {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
 }
 
-/* ===========================
-   📱 RESPONSIVE DESIGN END
-   =========================== */
